@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    android:paddingBottom="@dimen/material_emphasis_high_type"
+    android:paddingLeft="@dimen/material_emphasis_medium"
+    android:paddingRight="@dimen/material_emphasis_medium"
+    android:paddingTop="@dimen/material_emphasis_high_type"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="10dp">
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edittext_top_bg"
+        android:drawableLeft="@drawable/user"
+        android:hint="@string/userName"
+        android:imeOptions="actionSend|flagNoEnterAction"
+        android:padding="10dp"
+        android:textColorHint="#cccccc"/>
+    <EditText
+        android:id="@+id/etPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-2dp"
+        android:background="@drawable/edittext_bottom_bg"
+        android:drawableLeft="@drawable/password"
+        android:hint="@string/password"
+        android:imeOptions="actionSend|flagNoEnterAction"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="#cccccc" />
+    <Button
+        android:id="@+id/btnSingIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/button_default_bg"
+        android:padding="10dp"
+        android:text="@string/signIn" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginRight="12dp"
+        android:text="@string/signUp" />
+</RelativeLayout>

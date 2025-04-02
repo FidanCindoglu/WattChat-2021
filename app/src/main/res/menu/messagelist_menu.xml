@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/refresh"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:showAsAction="ifRoom|withText"
+        android:title="Refresh" />
+    <item
+        android:id="@+id/contact"
+        android:icon="@drawable/kisspng_computer_icons_user_user_icon_5b27870a870209_962036551529317130553"
+        android:showAsAction="ifRoom|withText"
+        android:title="Contacts" />
+    <item
+        android:id="@+id/update"
+        android:icon="@android:drawable/ic_menu_edit"
+        android:showAsAction="ifRoom|withText"
+        android:title="Update" />
+</menu>
